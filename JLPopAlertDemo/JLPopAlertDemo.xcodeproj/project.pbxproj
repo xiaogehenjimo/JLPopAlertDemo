@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CAF8EB7D3822AAFF6480C05 /* Pods_JLPopAlertDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3D9E6ED28380A4F13C4C2C /* Pods_JLPopAlertDemo.framework */; };
+		EEBB78DF259C5DFD003BB5F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB78DE259C5DFD003BB5F2 /* AppDelegate.m */; };
+		EEBB78E5259C5DFD003BB5F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB78E4259C5DFD003BB5F2 /* ViewController.m */; };
+		EEBB78EA259C5E03003BB5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBB78E9259C5E03003BB5F2 /* Assets.xcassets */; };
+		EEBB78ED259C5E03003BB5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBB78EB259C5E03003BB5F2 /* LaunchScreen.storyboard */; };
+		EEBB78F0259C5E03003BB5F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB78EF259C5E03003BB5F2 /* main.m */; };
+		EEBB78FC259C5EDD003BB5F2 /* JLBaseAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB78FB259C5EDD003BB5F2 /* JLBaseAlertViewController.m */; };
+		EEBB7901259C5F28003BB5F2 /* JLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB78FF259C5F28003BB5F2 /* JLBaseViewController.m */; };
+		EEBB7907259C68DC003BB5F2 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB7906259C68DC003BB5F2 /* UIViewExt.m */; };
+		EEBB790F259C6A2D003BB5F2 /* JLAlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB790E259C6A2D003BB5F2 /* JLAlertViewManager.m */; };
+		EEBB7914259C6B50003BB5F2 /* JLGeneralWarnAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB7913259C6B50003BB5F2 /* JLGeneralWarnAlertView.m */; };
+		EEBB7918259C6C51003BB5F2 /* UIColor+change.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB7917259C6C51003BB5F2 /* UIColor+change.m */; };
+		EEBB791F259C6DAC003BB5F2 /* NSObject+JLCurrentVc.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBB791E259C6DAC003BB5F2 /* NSObject+JLCurrentVc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B1EC6BA9252C7ADFCA56B63 /* Pods-JLPopAlertDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPopAlertDemo.release.xcconfig"; path = "Target Support Files/Pods-JLPopAlertDemo/Pods-JLPopAlertDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EEBB78DA259C5DFD003BB5F2 /* JLPopAlertDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLPopAlertDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBB78DD259C5DFD003BB5F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEBB78DE259C5DFD003BB5F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEBB78E3259C5DFD003BB5F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EEBB78E4259C5DFD003BB5F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEBB78E9259C5E03003BB5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEBB78EC259C5E03003BB5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEBB78EE259C5E03003BB5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBB78EF259C5E03003BB5F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEBB78FA259C5EDD003BB5F2 /* JLBaseAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBaseAlertViewController.h; sourceTree = "<group>"; };
+		EEBB78FB259C5EDD003BB5F2 /* JLBaseAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBaseAlertViewController.m; sourceTree = "<group>"; };
+		EEBB78FF259C5F28003BB5F2 /* JLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBaseViewController.m; sourceTree = "<group>"; };
+		EEBB7900259C5F28003BB5F2 /* JLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBaseViewController.h; sourceTree = "<group>"; };
+		EEBB7905259C68DC003BB5F2 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		EEBB7906259C68DC003BB5F2 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		EEBB7909259C6918003BB5F2 /* JLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLPrefixHeader.pch; sourceTree = "<group>"; };
+		EEBB790D259C6A2D003BB5F2 /* JLAlertViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLAlertViewManager.h; sourceTree = "<group>"; };
+		EEBB790E259C6A2D003BB5F2 /* JLAlertViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLAlertViewManager.m; sourceTree = "<group>"; };
+		EEBB7912259C6B50003BB5F2 /* JLGeneralWarnAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLGeneralWarnAlertView.h; sourceTree = "<group>"; };
+		EEBB7913259C6B50003BB5F2 /* JLGeneralWarnAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLGeneralWarnAlertView.m; sourceTree = "<group>"; };
+		EEBB7916259C6C51003BB5F2 /* UIColor+change.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+change.h"; sourceTree = "<group>"; };
+		EEBB7917259C6C51003BB5F2 /* UIColor+change.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+change.m"; sourceTree = "<group>"; };
+		EEBB791D259C6DAC003BB5F2 /* NSObject+JLCurrentVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JLCurrentVc.h"; sourceTree = "<group>"; };
+		EEBB791E259C6DAC003BB5F2 /* NSObject+JLCurrentVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JLCurrentVc.m"; sourceTree = "<group>"; };
+		F54CE89E0165C3F8E692F46D /* Pods-JLPopAlertDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLPopAlertDemo.debug.xcconfig"; path = "Target Support Files/Pods-JLPopAlertDemo/Pods-JLPopAlertDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC3D9E6ED28380A4F13C4C2C /* Pods_JLPopAlertDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JLPopAlertDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEBB78D7259C5DFD003BB5F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAF8EB7D3822AAFF6480C05 /* Pods_JLPopAlertDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D75CB7BE103F2D96EF21C6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC3D9E6ED28380A4F13C4C2C /* Pods_JLPopAlertDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7B8B3B6C03C772CA2987AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F54CE89E0165C3F8E692F46D /* Pods-JLPopAlertDemo.debug.xcconfig */,
+				2B1EC6BA9252C7ADFCA56B63 /* Pods-JLPopAlertDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEBB78D1259C5DFD003BB5F2 = {
+			isa = PBXGroup;
+			children = (
+				EEBB78DC259C5DFD003BB5F2 /* JLPopAlertDemo */,
+				EEBB78DB259C5DFD003BB5F2 /* Products */,
+				E7B8B3B6C03C772CA2987AFB /* Pods */,
+				0D75CB7BE103F2D96EF21C6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEBB78DB259C5DFD003BB5F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEBB78DA259C5DFD003BB5F2 /* JLPopAlertDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEBB78DC259C5DFD003BB5F2 /* JLPopAlertDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EEBB78F8259C5E7A003BB5F2 /* JLAlertView */,
+				EEBB7911259C6B36003BB5F2 /* Demo */,
+				EEBB78DD259C5DFD003BB5F2 /* AppDelegate.h */,
+				EEBB78DE259C5DFD003BB5F2 /* AppDelegate.m */,
+				EEBB78E3259C5DFD003BB5F2 /* ViewController.h */,
+				EEBB78E4259C5DFD003BB5F2 /* ViewController.m */,
+				EEBB78E9259C5E03003BB5F2 /* Assets.xcassets */,
+				EEBB78EB259C5E03003BB5F2 /* LaunchScreen.storyboard */,
+				EEBB78EE259C5E03003BB5F2 /* Info.plist */,
+				EEBB78EF259C5E03003BB5F2 /* main.m */,
+				EEBB7909259C6918003BB5F2 /* JLPrefixHeader.pch */,
+			);
+			path = JLPopAlertDemo;
+			sourceTree = "<group>";
+		};
+		EEBB78F8259C5E7A003BB5F2 /* JLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				EEBB78FE259C5F13003BB5F2 /* Base */,
+				EEBB790D259C6A2D003BB5F2 /* JLAlertViewManager.h */,
+				EEBB790E259C6A2D003BB5F2 /* JLAlertViewManager.m */,
+				EEBB78FA259C5EDD003BB5F2 /* JLBaseAlertViewController.h */,
+				EEBB78FB259C5EDD003BB5F2 /* JLBaseAlertViewController.m */,
+			);
+			path = JLAlertView;
+			sourceTree = "<group>";
+		};
+		EEBB78FE259C5F13003BB5F2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EEBB791D259C6DAC003BB5F2 /* NSObject+JLCurrentVc.h */,
+				EEBB791E259C6DAC003BB5F2 /* NSObject+JLCurrentVc.m */,
+				EEBB7905259C68DC003BB5F2 /* UIViewExt.h */,
+				EEBB7906259C68DC003BB5F2 /* UIViewExt.m */,
+				EEBB7916259C6C51003BB5F2 /* UIColor+change.h */,
+				EEBB7917259C6C51003BB5F2 /* UIColor+change.m */,
+				EEBB7900259C5F28003BB5F2 /* JLBaseViewController.h */,
+				EEBB78FF259C5F28003BB5F2 /* JLBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EEBB7911259C6B36003BB5F2 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EEBB7912259C6B50003BB5F2 /* JLGeneralWarnAlertView.h */,
+				EEBB7913259C6B50003BB5F2 /* JLGeneralWarnAlertView.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEBB78D9259C5DFD003BB5F2 /* JLPopAlertDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBB78F3259C5E03003BB5F2 /* Build configuration list for PBXNativeTarget "JLPopAlertDemo" */;
+			buildPhases = (
+				9A1F39BA3ABE6E4872782D2E /* [CP] Check Pods Manifest.lock */,
+				EEBB78D6259C5DFD003BB5F2 /* Sources */,
+				EEBB78D7259C5DFD003BB5F2 /* Frameworks */,
+				EEBB78D8259C5DFD003BB5F2 /* Resources */,
+				6A9512F2CA518BC9D41AEF8C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLPopAlertDemo;
+			productName = JLPopAlertDemo;
+			productReference = EEBB78DA259C5DFD003BB5F2 /* JLPopAlertDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEBB78D2259C5DFD003BB5F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					EEBB78D9259C5DFD003BB5F2 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = EEBB78D5259C5DFD003BB5F2 /* Build configuration list for PBXProject "JLPopAlertDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEBB78D1259C5DFD003BB5F2;
+			productRefGroup = EEBB78DB259C5DFD003BB5F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEBB78D9259C5DFD003BB5F2 /* JLPopAlertDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEBB78D8259C5DFD003BB5F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBB78ED259C5E03003BB5F2 /* LaunchScreen.storyboard in Resources */,
+				EEBB78EA259C5E03003BB5F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A9512F2CA518BC9D41AEF8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLPopAlertDemo/Pods-JLPopAlertDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JLPopAlertDemo/Pods-JLPopAlertDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JLPopAlertDemo/Pods-JLPopAlertDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1F39BA3ABE6E4872782D2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JLPopAlertDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEBB78D6259C5DFD003BB5F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBB7918259C6C51003BB5F2 /* UIColor+change.m in Sources */,
+				EEBB78E5259C5DFD003BB5F2 /* ViewController.m in Sources */,
+				EEBB791F259C6DAC003BB5F2 /* NSObject+JLCurrentVc.m in Sources */,
+				EEBB78DF259C5DFD003BB5F2 /* AppDelegate.m in Sources */,
+				EEBB7914259C6B50003BB5F2 /* JLGeneralWarnAlertView.m in Sources */,
+				EEBB790F259C6A2D003BB5F2 /* JLAlertViewManager.m in Sources */,
+				EEBB7901259C5F28003BB5F2 /* JLBaseViewController.m in Sources */,
+				EEBB78FC259C5EDD003BB5F2 /* JLBaseAlertViewController.m in Sources */,
+				EEBB7907259C68DC003BB5F2 /* UIViewExt.m in Sources */,
+				EEBB78F0259C5E03003BB5F2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEBB78EB259C5E03003BB5F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBB78EC259C5E03003BB5F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEBB78F1259C5E03003BB5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EEBB78F2259C5E03003BB5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEBB78F4259C5E03003BB5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54CE89E0165C3F8E692F46D /* Pods-JLPopAlertDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q3M7DBRJY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JLPopAlertDemo/JLPrefixHeader.pch;
+				INFOPLIST_FILE = JLPopAlertDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jl.JLPopAlertDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EEBB78F5259C5E03003BB5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1EC6BA9252C7ADFCA56B63 /* Pods-JLPopAlertDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q3M7DBRJY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JLPopAlertDemo/JLPrefixHeader.pch;
+				INFOPLIST_FILE = JLPopAlertDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jl.JLPopAlertDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEBB78D5259C5DFD003BB5F2 /* Build configuration list for PBXProject "JLPopAlertDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBB78F1259C5E03003BB5F2 /* Debug */,
+				EEBB78F2259C5E03003BB5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBB78F3259C5E03003BB5F2 /* Build configuration list for PBXNativeTarget "JLPopAlertDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBB78F4259C5E03003BB5F2 /* Debug */,
+				EEBB78F5259C5E03003BB5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEBB78D2259C5DFD003BB5F2 /* Project object */;
+}

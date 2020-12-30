@@ -1,0 +1,6 @@
+framework module Pods_JLPopAlertDemo {
+  umbrella header "Pods-JLPopAlertDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

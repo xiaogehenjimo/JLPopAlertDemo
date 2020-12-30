@@ -1,0 +1,50 @@
+//
+//  JLPrefixHeader.pch
+//  JLPopAlertDemo
+//
+//  Created by xuqinqiang on 2020/12/30.
+//
+
+#ifndef JLPrefixHeader_pch
+#define JLPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Masonry/Masonry.h>
+#import "UIColor+change.h"
+#import "NSObject+JLCurrentVc.h"
+#import "UIViewExt.h"
+#import <YYText/YYText.h>
+
+
+#define kMainColor [UIColor colorFromHexRGB:@"ffb500"] //项目主色
+
+#define kJLColor333 [UIColor colorFromHexRGB:@"333333"]
+#define kJLColor666 [UIColor colorFromHexRGB:@"666666"]
+#define kJLColor999 [UIColor colorFromHexRGB:@"999999"]
+#define kJLColorBBB [UIColor colorFromHexRGB:@"BBBBBB"]
+#define kJLColorF4 [UIColor colorFromHexRGB:@"F4F4F4"]//一般线条颜色
+#define kJLColorF1 [UIColor colorFromHexRGB:@"F1F1F1"]//一般线条颜色
+#define kJLColorFfab00 [UIColor colorFromHexRGB:@"FFAB00"] //大部分文本高亮颜色
+#define kJLColorFfd400 [UIColor colorFromHexRGB:@"ffd400"]
+
+#define JLSafeBorder getAutoSize(15) //页面安全边距
+
+#define SCREENWIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREENHEIGHT [[UIScreen mainScreen] bounds].size.height
+
+// 屏幕宽高适配比例（X 上如果小于6的比例，强制为6的）
+#define kBASESCREENHEIGHT 667.0f    //以iPhone6屏size做为基准
+#define kBASESCREENWIDTH  375.0f
+#define kAutoSizeScaleX_ (SCREENWIDTH/kBASESCREENWIDTH < 1.0f ? 1.0f : SCREENWIDTH/kBASESCREENWIDTH)      //竖屏_X
+#define kAutoSizeScale_Hor_X (SCREENHEIGHT/kBASESCREENWIDTH < 1.0f ? 1.0f : SCREENHEIGHT/kBASESCREENWIDTH)//横屏_X
+#define kAutoSizeScaleY_ SCREENHEIGHT/kBASESCREENHEIGHT    // Y
+#define getAutoSize(key) ((NSInteger)(kAutoSizeScaleX_ * key))     //竖屏
+#define getAutoSize_Y(key) (kAutoSizeScaleY_ * key)          // Y 竖屏
+#define getAutoSize_Hor(key) (kAutoSizeScale_Hor_X * key)    //横屏
+#define getAutoDelSize(key) (key / kAutoSizeScaleX_)
+#define getAutoSize_Hor_FSView(key) ((SCREENHEIGHT/kBASESCREENWIDTH) * key)    //分时K线横屏 以6为基准，进行等比例缩放。
+
+
+#endif /* JLPrefixHeader_pch */
